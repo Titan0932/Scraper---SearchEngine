@@ -1,0 +1,70 @@
+Passed Test #34 checking IDF for apricot
+expected = 0.0
+result = 0.0
+
+
+Passed Test #35 checking IDF for kiwi
+expected = 0.32192809488736235
+result = 0.32192809488736235
+
+
+Passed Test #36 checking IDF for papaya
+expected = 0.5145731728297582
+result = 0.514573207226288
+
+
+Passed Test #37 checking IDF for fig
+expected = 0.7369655941662062
+result = 0.7369655597696756
+
+
+Passed Test #38 checking IDF for coconut
+expected = 0.32192809488736235
+result = 0.32192809488736235
+
+
+Passed Test #39 checking IDF for pear
+expected = 0.7369655941662062
+result = 0.7369655597696756
+
+
+Passed Test #40 checking IDF for apple
+expected = 0.32192809488736235
+result = 0.32192809488736235
+
+
+Passed Test #41 checking IDF for lime
+expected = 0.32192809488736235
+result = 0.32192809488736235
+
+
+Passed Test #42 checking IDF for blueberry
+expected = 0.32192809488736235
+result = 0.32192809488736235
+
+
+Passed Test #43 checking IDF for cherry
+expected = 0.5145731728297582
+result = 0.514573207226288
+
+
+Passed Test #44 checking IDF for peach
+expected = 0.5145731728297582
+result = 0.514573207226288
+
+
+Passed Test #45 checking IDF for banana
+expected = 0.0
+result = 0.0
+
+
+Passed Test #46 checking IDF for orange
+expected = 0.32192809488736235
+result = 0.32192809488736235
+
+
+Passed Test #47 checking IDF for tomato
+expected = 0.0
+result = 0.0
+
+

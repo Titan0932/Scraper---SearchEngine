@@ -1,0 +1,605 @@
+Passed Test #169 checking TFIDF for coconut in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-9.html
+expected = 0.02445006963027565
+result = 0.024450069630275652
+
+
+Passed Test #170 checking TFIDF for papaya in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-9.html
+expected = 0.03908124238104001
+result = 0.039081244993416996
+
+
+Passed Test #171 checking TFIDF for lime in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-9.html
+expected = 0.02445006963027565
+result = 0.024450069630275652
+
+
+Passed Test #172 checking TFIDF for peach in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-9.html
+expected = 0.07620758655640758
+result = 0.07620759165048682
+
+
+Passed Test #173 checking TFIDF for pear in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-9.html
+expected = 0.13476451852905313
+result = 0.134764512239164
+
+
+Passed Test #174 checking TFIDF for cherry in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-9.html
+expected = 0.05787647829766945
+result = 0.05787648216640981
+
+
+Passed Test #175 checking TFIDF for apple in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-9.html
+expected = 0.06979767743420133
+result = 0.06979767743420133
+
+
+Passed Test #176 checking TFIDF for apricot in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-9.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #177 checking TFIDF for banana in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-9.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #178 checking TFIDF for fig in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-9.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #179 checking TFIDF for tomato in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-9.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #180 checking TFIDF for coconut in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html
+expected = 0.05694192097566775
+result = 0.05694192097566774
+
+
+Passed Test #181 checking TFIDF for papaya in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html
+expected = 0.031595073081303486
+result = 0.031595075193269144
+
+
+Passed Test #182 checking TFIDF for lime in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html
+expected = 0.03872609348667805
+result = 0.03872609348667805
+
+
+Passed Test #183 checking TFIDF for peach in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html
+expected = 0.031595073081303486
+result = 0.031595075193269144
+
+
+Passed Test #184 checking TFIDF for pear in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html
+expected = 0.04525008888053903
+result = 0.04525008676857332
+
+
+Passed Test #185 checking TFIDF for cherry in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html
+expected = 0.031595073081303486
+result = 0.031595075193269144
+
+
+Passed Test #186 checking TFIDF for apple in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html
+expected = 0.07447019235682993
+result = 0.07447019235682993
+
+
+Passed Test #187 checking TFIDF for apricot in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #188 checking TFIDF for banana in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #189 checking TFIDF for fig in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html
+expected = 0.04525008888053903
+result = 0.04525008676857332
+
+
+Passed Test #190 checking TFIDF for tomato in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #191 checking TFIDF for coconut in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-1.html
+expected = 0.02266030222847964
+result = 0.022660302228479638
+
+
+Passed Test #192 checking TFIDF for papaya in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-1.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #193 checking TFIDF for lime in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-1.html
+expected = 0.044266247441115764
+result = 0.044266247441115764
+
+
+Passed Test #194 checking TFIDF for peach in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-1.html
+expected = 0.03622045978643087
+result = 0.036220462207579476
+
+
+Passed Test #195 checking TFIDF for pear in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-1.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #196 checking TFIDF for cherry in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-1.html
+expected = 0.10375537569198201
+result = 0.1037553826274871
+
+
+Passed Test #197 checking TFIDF for apple in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-1.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #198 checking TFIDF for apricot in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-1.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #199 checking TFIDF for banana in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-1.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #200 checking TFIDF for fig in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-1.html
+expected = 0.14859721830091777
+result = 0.14859721136541248
+
+
+Passed Test #201 checking TFIDF for tomato in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-1.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #202 checking TFIDF for coconut in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-2.html
+expected = 0.11672149491947882
+result = 0.11672149491947884
+
+
+Passed Test #203 checking TFIDF for papaya in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-2.html
+expected = 0.0991299889868547
+result = 0.09912999561317684
+
+
+Passed Test #204 checking TFIDF for lime in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-2.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #205 checking TFIDF for peach in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-2.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #206 checking TFIDF for pear in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-2.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #207 checking TFIDF for cherry in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-2.html
+expected = 0.0991299889868547
+result = 0.09912999561317684
+
+
+Passed Test #208 checking TFIDF for apple in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-2.html
+expected = 0.06201786293142292
+result = 0.06201786293142292
+
+
+Passed Test #209 checking TFIDF for apricot in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-2.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #210 checking TFIDF for banana in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-2.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #211 checking TFIDF for fig in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-2.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #212 checking TFIDF for tomato in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-2.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #213 checking TFIDF for coconut in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-5.html
+expected = 0.0404119177187868
+result = 0.0404119177187868
+
+
+Passed Test #214 checking TFIDF for papaya in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-5.html
+expected = 0.12401630243933787
+result = 0.12401631072918014
+
+
+Passed Test #215 checking TFIDF for lime in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-5.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #216 checking TFIDF for peach in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-5.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #217 checking TFIDF for pear in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-5.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #218 checking TFIDF for cherry in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-5.html
+expected = 0.06459482428200948
+result = 0.06459482859983622
+
+
+Passed Test #219 checking TFIDF for apple in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-5.html
+expected = 0.07758727832568058
+result = 0.07758727832568058
+
+
+Passed Test #220 checking TFIDF for apricot in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-5.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #221 checking TFIDF for banana in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-5.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #222 checking TFIDF for fig in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-5.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #223 checking TFIDF for tomato in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-5.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #224 checking TFIDF for coconut in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-8.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #225 checking TFIDF for papaya in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-8.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #226 checking TFIDF for lime in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-8.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #227 checking TFIDF for peach in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-8.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #228 checking TFIDF for pear in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-8.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #229 checking TFIDF for cherry in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-8.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #230 checking TFIDF for apple in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-8.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #231 checking TFIDF for apricot in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-8.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #232 checking TFIDF for banana in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-8.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #233 checking TFIDF for fig in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-8.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #234 checking TFIDF for tomato in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-8.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #235 checking TFIDF for coconut in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-6.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #236 checking TFIDF for papaya in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-6.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #237 checking TFIDF for lime in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-6.html
+expected = 0.02815674585715757
+result = 0.028156745857157578
+
+
+Passed Test #238 checking TFIDF for peach in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-6.html
+expected = 0.045006031726892604
+result = 0.045006034735310826
+
+
+Passed Test #239 checking TFIDF for pear in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-6.html
+expected = 0.18271404725510207
+result = 0.18271403872725575
+
+
+Passed Test #240 checking TFIDF for cherry in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-6.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #241 checking TFIDF for apple in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-6.html
+expected = 0.02815674585715757
+result = 0.028156745857157578
+
+
+Passed Test #242 checking TFIDF for apricot in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-6.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #243 checking TFIDF for banana in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-6.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #244 checking TFIDF for fig in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-6.html
+expected = 0.18271404725510207
+result = 0.18271403872725575
+
+
+Passed Test #245 checking TFIDF for tomato in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-6.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #246 checking TFIDF for coconut in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-7.html
+expected = 0.02815674585715757
+result = 0.028156745857157578
+
+
+Passed Test #247 checking TFIDF for papaya in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-7.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #248 checking TFIDF for lime in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-7.html
+expected = 0.02815674585715757
+result = 0.028156745857157578
+
+
+Passed Test #249 checking TFIDF for peach in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-7.html
+expected = 0.045006031726892604
+result = 0.045006034735310826
+
+
+Passed Test #250 checking TFIDF for pear in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-7.html
+expected = 0.06445710476952095
+result = 0.06445710176110266
+
+
+Passed Test #251 checking TFIDF for cherry in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-7.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #252 checking TFIDF for apple in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-7.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #253 checking TFIDF for apricot in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-7.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #254 checking TFIDF for banana in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-7.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #255 checking TFIDF for fig in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-7.html
+expected = 0.06445710476952095
+result = 0.06445710176110266
+
+
+Passed Test #256 checking TFIDF for tomato in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-7.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #257 checking TFIDF for coconut in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-4.html
+expected = 0.014291714269269087
+result = 0.014291714269269087
+
+
+Passed Test #258 checking TFIDF for papaya in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-4.html
+expected = 0.045006031726892604
+result = 0.045006034735310826
+
+
+Passed Test #259 checking TFIDF for lime in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-4.html
+expected = 0.014291714269269087
+result = 0.014291714269269087
+
+
+Passed Test #260 checking TFIDF for peach in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-4.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #261 checking TFIDF for pear in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-4.html
+expected = 0.06445710476952095
+result = 0.06445710176110266
+
+
+Passed Test #262 checking TFIDF for cherry in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-4.html
+expected = 0.1656555612092295
+result = 0.16565557228243882
+
+
+Passed Test #263 checking TFIDF for apple in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-4.html
+expected = 0.054703631988055924
+result = 0.05470363198805592
+
+
+Passed Test #264 checking TFIDF for apricot in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-4.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #265 checking TFIDF for banana in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-4.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #266 checking TFIDF for fig in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-4.html
+expected = 0.06445710476952095
+result = 0.06445710176110266
+
+
+Passed Test #267 checking TFIDF for tomato in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-4.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #268 checking TFIDF for coconut in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-3.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #269 checking TFIDF for papaya in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-3.html
+expected = 0.13535044877328553
+result = 0.1353504578207563
+
+
+Passed Test #270 checking TFIDF for lime in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-3.html
+expected = 0.10978936524490102
+result = 0.10978936524490102
+
+
+Passed Test #271 checking TFIDF for peach in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-3.html
+expected = 0.04791160163801364
+result = 0.047911604840654036
+
+
+Passed Test #272 checking TFIDF for pear in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-3.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #273 checking TFIDF for cherry in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-3.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #274 checking TFIDF for apple in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-3.html
+expected = 0.02997453317184664
+result = 0.02997453317184664
+
+
+Passed Test #275 checking TFIDF for apricot in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-3.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #276 checking TFIDF for banana in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-3.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #277 checking TFIDF for fig in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-3.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #278 checking TFIDF for tomato in https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-3.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #279 checking TFIDF for coconut in http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #280 checking TFIDF for papaya in http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #281 checking TFIDF for lime in http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #282 checking TFIDF for peach in http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #283 checking TFIDF for pear in http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #284 checking TFIDF for cherry in http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #285 checking TFIDF for apple in http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #286 checking TFIDF for apricot in http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #287 checking TFIDF for banana in http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #288 checking TFIDF for fig in http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = 0.0
+result = 0.0
+
+
+Passed Test #289 checking TFIDF for tomato in http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = 0.0
+result = 0.0
+
+
