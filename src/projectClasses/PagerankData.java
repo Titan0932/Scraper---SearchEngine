@@ -3,10 +3,11 @@ package projectClasses;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.text.DecimalFormat;
 
-public class PagerankData implements Comparable<PagerankData>, SearchResult {
+public class PagerankData implements SearchResult {
     private String url;
-    private String ORDER;  //descending or ascending order
+    // private String ORDER;  //descending or ascending order
     private Double score;
     private String title;
 
@@ -17,29 +18,37 @@ public class PagerankData implements Comparable<PagerankData>, SearchResult {
 
     public PagerankData(String newUrl, Double newScore, String order){
         this.url=newUrl;
-        this.ORDER= order.toLowerCase();
+        // this.ORDER= order.toLowerCase();
         this.score=newScore;
         this.title=findtitle(newUrl);
     }
 
 
 
-    public int compareTo(PagerankData urlData){
-        if(this.ORDER.equals("asc")){
-            return this.score.compareTo(urlData.getScore());   //for descending order
-        }
-        // double urlScore= urlData.getScore();
-        return urlData.score.compareTo(this.score);
-    }
+    // public int compareTo(PagerankData urlData){
+    //     // if(this.ORDER.equals("asc")){
+    //     //     return this.score.compareTo(urlData.getScore());   //for ascending order if specified
+    //     // }
+    //     // double urlScore= urlData.getScore();
+    //     // DecimalFormat df = new DecimalFormat("#.###");
+    //     // Double urlScoreRounded= Double.valueOf(df.format(urlData.score));
+    //     // Double thisScoreRounded= Double.valueOf(df.format(this.score));
+    //     if(this.score== urlData.score){
+    //         return this.title.compareTo(urlData.getTitle());  //IF same score then sort by title in ascending order
+    //     }
+    //     // return Double.compare(urlScoreRounded, thisScoreRounded);
+    //     return urlData.score.compareTo(this.score);
+    // }
 
 
-    public String getUrl(){
+    public String getUrl(){ 
         return this.url;
     }
 
     public Double getDataScore(){
         return this.score;
     }
+
 
     /*
 It calculates the score by multiplying the score of each url by its pagerank value and returns the updated score dict.
@@ -54,7 +63,9 @@ public void setScore(Double pagerank){
     // return score;
     // System.out.println("coSIne: "+ this.score);
     // System.out.println("URL: "+url+ " => "+ pagerank);
-    this.score= (this.score * pagerank);
+    DecimalFormat df = new DecimalFormat("#.###");
+    this.score= Double.valueOf(df.format(this.score * pagerank));
+    // this.score= (this.score * pagerank *1000d)/1000d;
 }
 
 public String getTitle(){

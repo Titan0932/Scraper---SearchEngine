@@ -60,7 +60,6 @@ public class Crawler implements ProjectTester, CrawlerActions {
                 }   // this dictionary stores the tfs for every page.This dict is used such that we can compute the values as
                 the crawl loop is active simultaneously such that another loop does not have to be used to compute these values.
 */
-    int indexCounter = 0;
     List<String> urlIndexMap = new ArrayList<>();
     HashMap<String, String[]> urlOutgoings = new HashMap<>();
     String data = null;
@@ -89,7 +88,6 @@ public class Crawler implements ProjectTester, CrawlerActions {
       linksAccessed++;
       //convert to array sized linkque
       urlIndexMap.add(curr);
-      indexCounter += 1;
       urlOutgoings.put(curr, parsedData.getLinks().strip().split("\\s+"));
     }
     // generate and save the idf value for all unique words in a file
@@ -98,7 +96,6 @@ public class Crawler implements ProjectTester, CrawlerActions {
     }
     generate_tf_tfIdf(pagesWordsCount, uniqueWords);
     String[] allUrls = new File("webdata").list();
-    System.out.println("TFS all done");
     //    for (String doc : allUrls) {
     //     CrawlerActions.generate_pageRank(doc, allUrls, urlIndexMap, urlOutgoings);
     //    }
@@ -189,7 +186,7 @@ public class Crawler implements ProjectTester, CrawlerActions {
       file.close();
       return (List.of(urlData.split("\\s+")));
     } catch (Exception e) {
-      e.printStackTrace();
+        e.printStackTrace();
       return null;
     }
   }
@@ -377,9 +374,12 @@ public class Crawler implements ProjectTester, CrawlerActions {
      * @return The difference between the two scores.
      */
     public int compare(PagerankData p1, PagerankData p2) {
-      if (p1.getScore() == p2.getScore()) return 0; else if (
-        p1.getScore() < p2.getScore()
-      ) return 1; else return -1;
+      if (p1.getScore() == p2.getScore()) {
+        return((p1.getTitle()).compareTo(p2.getTitle()));
+      } 
+      else if (
+        p1.getScore() < p2.getScore()) {return 1;}
+      else return -1;
     }
   }
 
@@ -433,6 +433,17 @@ public class Crawler implements ProjectTester, CrawlerActions {
         data.setScore(this.getPageRank(data.getUrl()));
       }
     }
+    else{
+      for (PagerankData data : dataList) {
+        data.setScore(1d);
+      }
+    }
+    
+    // else{
+    //   for (PagerankData data : dataList) {
+    //     data.setScore(1d);   //if no boosting, we want to round the values to 3 decimal places to calculate the scores
+    //   }
+    // }
     Collections.sort(dataList, new SearchResultComparator());
     List<SearchResult> result = new ArrayList<>();
 
@@ -458,13 +469,9 @@ public class Crawler implements ProjectTester, CrawlerActions {
   }
 
   public static void main(String[] args) {
-    //         Crawler test= new Crawler();
-    // // //        test.initialize();
-    // //         test.crawl("https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html");
-    //         List<SearchResult> res = (test.search("peach papaya", false, 10));
-    //         for(SearchResult r : res){
-    //             System.out.println(r.getTitle()+ " "+ r.getScore());
-    //         }
-
+          //   Crawler test= new Crawler();
+          //  test.initialize();
+          //   test.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html");
+          //   List<SearchResult> res = (test.search("peach papaya", false, 10));
   }
 }

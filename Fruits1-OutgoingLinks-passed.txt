@@ -1,0 +1,255 @@
+Passed Test #1 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-539.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-400.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-83.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-400.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-83.html]
+
+
+Passed Test #2 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-944.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-276.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-276.html]
+
+
+Passed Test #3 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-218.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-118.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-16.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-16.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-118.html]
+
+
+Passed Test #4 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-582.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-1.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-821.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-9.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-821.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-1.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-9.html]
+
+
+Passed Test #5 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-778.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-208.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-208.html]
+
+
+Passed Test #6 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-596.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-369.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-20.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-20.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-369.html]
+
+
+Passed Test #7 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-338.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-661.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-10.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-383.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-3.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-3.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-10.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-383.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-661.html]
+
+
+Passed Test #8 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-870.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-978.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-733.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-733.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-978.html]
+
+
+Passed Test #9 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-920.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-454.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-11.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-139.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-941.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-139.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-454.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-11.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-941.html]
+
+
+Passed Test #10 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-671.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-645.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-645.html]
+
+
+Passed Test #11 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-359.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-890.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-270.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-270.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-890.html]
+
+
+Passed Test #12 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-207.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-22.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-174.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-22.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-174.html]
+
+
+Passed Test #13 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-332.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-300.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-300.html]
+
+
+Passed Test #14 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-462.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-3.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-3.html]
+
+
+Passed Test #15 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-287.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-10.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-52.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-541.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-52.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-10.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-541.html]
+
+
+Passed Test #16 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-136.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-24.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-28.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-28.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-24.html]
+
+
+Passed Test #17 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-291.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-844.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-3.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-240.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-3.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-844.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-240.html]
+
+
+Passed Test #18 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-463.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-188.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-188.html]
+
+
+Passed Test #19 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-357.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-394.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-385.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-202.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-245.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-385.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-394.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-202.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-245.html]
+
+
+Passed Test #20 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-94.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-40.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-40.html]
+
+
+Passed Test #21 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-438.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-154.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-128.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-157.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-154.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-157.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-128.html]
+
+
+Passed Test #22 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-446.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-866.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-223.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-601.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-636.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-636.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-223.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-601.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-866.html]
+
+
+Passed Test #23 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-902.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-62.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-62.html]
+
+
+Passed Test #24 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-337.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-21.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-21.html]
+
+
+Passed Test #25 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-31.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-97.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-1.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-49.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-1.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-97.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-49.html]
+
+
+Passed Test #26 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-64.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-62.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-959.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-119.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-149.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-210.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-74.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-9.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-210.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-9.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-62.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-74.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-119.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-149.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-959.html]
+
+
+Passed Test #27 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-294.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-909.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-21.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-329.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-909.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-21.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-329.html]
+
+
+Passed Test #28 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-607.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-9.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-9.html]
+
+
+Passed Test #29 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-731.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-623.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-623.html]
+
+
+Passed Test #30 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-129.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-694.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-5.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-694.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-5.html]
+
+
+Passed Test #31 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-279.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-4.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-4.html]
+
+
+Passed Test #32 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-931.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-943.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-564.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-564.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-943.html]
+
+
+Passed Test #33 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-466.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-387.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-183.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-10.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-513.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-423.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-183.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-387.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-423.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-10.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-513.html]
+
+
+Passed Test #34 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-115.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-518.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-84.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-645.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-863.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-43.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-84.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-518.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-645.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-43.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-863.html]
+
+
+Passed Test #35 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-97.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-99.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-31.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-745.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-99.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-745.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-31.html]
+
+
+Passed Test #36 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-90.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-424.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-874.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-256.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-516.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-4.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-4.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-256.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-874.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-424.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-516.html]
+
+
+Passed Test #37 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-600.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-276.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-683.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-683.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-276.html]
+
+
+Passed Test #38 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-853.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-130.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-130.html]
+
+
+Passed Test #39 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-559.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-382.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-637.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-382.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-637.html]
+
+
+Passed Test #40 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-48.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-762.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-89.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-749.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-53.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-4.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-78.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-4.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-78.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-53.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-89.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-749.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-762.html]
+
+
+Passed Test #41 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-442.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-53.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-53.html]
+
+
+Passed Test #42 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-418.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-109.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-104.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-104.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-109.html]
+
+
+Passed Test #43 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-266.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-751.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-284.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-328.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-700.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-435.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-284.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-328.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-435.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-751.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-700.html]
+
+
+Passed Test #44 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-796.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-424.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-424.html]
+
+
+Passed Test #45 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-810.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-110.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-110.html]
+
+
+Passed Test #46 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-956.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-1.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-821.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-465.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-465.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-821.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-1.html]
+
+
+Passed Test #47 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-939.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-47.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-451.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-47.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-451.html]
+
+
+Passed Test #48 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-754.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-95.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-270.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-95.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-270.html]
+
+
+Passed Test #49 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-521.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-74.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-74.html]
+
+
+Passed Test #50 checking outgoing links for https://people.scs.carleton.ca/~davidmckenney/fruits/N-440.html
+expected = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-469.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-378.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-348.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-858.html]
+result = [https://people.scs.carleton.ca/~davidmckenney/fruits/N-348.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-378.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-858.html, https://people.scs.carleton.ca/~davidmckenney/fruits/N-469.html]
+
+
+Passed Test #51 checking outgoing links for http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = null
+result = null
+
+
