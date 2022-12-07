@@ -84,8 +84,7 @@ public interface CrawlerHelpers {
                                          HashMap<String, HashMap<String, Integer>> pagesWordsCount,
                                          List<String> uniqueWords) {
         boolean activeLoop = true;
-//        StringBuilder words = new StringBuilder();
-//        StringBuilder links = new StringBuilder();
+
         String words="";
         String links="";
         boolean titleFound = false;
@@ -174,11 +173,6 @@ public interface CrawlerHelpers {
                 url = url.replace("./", "");
                 activeUrl.add(url);  //and adds the current link 's url
                 finalUrl= String.join("/", activeUrl);
-//                StringBuilder endAddress = new StringBuilder();
-//                for(String address: activeUrl){
-//                    endAddress.append(address);
-//                }
-//                finalUrl = "/"+ endAddress;
 
             }
             urls.append(finalUrl).append(' ');
