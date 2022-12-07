@@ -53,7 +53,12 @@ static double generateIdf(String uniqueWord, Boolean saveFile){
 
 
 
-
+/*
+ * generates pageRank for all url and stores them in specific files
+ * @param allUrls :  array of all urls scraped
+ * @param urlIndexMap: a list of all urls used as a mapping for its index values for final value retieval: definition in crawler.java
+ * @param urlOutgoings: a hashmap of urls and their outgoing links
+ */
 static void generate_pageRank(String[] allUrls,List<String> urlIndexMap,HashMap<String, String[]> urlOutgoings){
     List<List<Double>> probabilityTransitionMatrix = generate_probabilityTransitionMatrix(urlIndexMap, urlOutgoings);
     List<List<Double>> scaledAdjacentMatrix = generate_scaled_adjacentMatrix(probabilityTransitionMatrix);
