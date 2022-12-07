@@ -1,7 +1,6 @@
 package projectClasses;
 
 import java.util.HashMap;
-import java.io.File;
 
 public final class Constants {
 

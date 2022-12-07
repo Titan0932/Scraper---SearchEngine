@@ -38,20 +38,8 @@ static double generateIdf(String uniqueWord, Boolean saveFile){
     double idf = Math.log(totalUrlNum / (1 + wordCount))/ Math.log(2);
     // System.out.println("idf: "+ idf);
     if (saveFile){
-//        Path path = Paths.get("idf/"+ uniqueWord+".txt");
         PrintWriter uniqueIdfsFile;
         String filepath= "idf"+File.separator+uniqueWord + ".txt";
-//        System.out.println(uniqueWord+" Newfile: "+ filepath);
-//        if (Files.exists(path)) {
-//            try {
-//                File newFile = new File(filepath);
-//                newFile.createNewFile();
-//            }
-//            catch(Exception e){
-//                System.out.println(uniqueWord+ " Error");
-//                e.printStackTrace();
-//            }
-//        }
         try {
             uniqueIdfsFile = new PrintWriter(new FileWriter(filepath));
             uniqueIdfsFile.println(idf);
@@ -67,9 +55,6 @@ static double generateIdf(String uniqueWord, Boolean saveFile){
 
 
 static void generate_pageRank(String[] allUrls,List<String> urlIndexMap,HashMap<String, String[]> urlOutgoings){
-    // if (!Arrays.asList(allUrls).contains(doc)){
-    //     return;
-    // }
     List<List<Double>> probabilityTransitionMatrix = generate_probabilityTransitionMatrix(urlIndexMap, urlOutgoings);
     List<List<Double>> scaledAdjacentMatrix = generate_scaled_adjacentMatrix(probabilityTransitionMatrix);
     List<List<Double>>  finalMatrix = generate_finalMatrix(scaledAdjacentMatrix);
@@ -85,17 +70,11 @@ static void generate_pageRank(String[] allUrls,List<String> urlIndexMap,HashMap<
         newVector = mult_matrix(piVector, finalMatrix);
         euclidianDist = euclidean_dist(piVector, newVector);
         piVector=newVector;
-        // piVector.clear();
-        // piVector.addAll(newVector);
     }
     // System.out.println(piVector);
     for(String doc: allUrls){
         String link = CrawlerHelpers.changeFilenameToLink(doc).replace(".txt", "");
-        // System.out.println(link);
-        // System.out.println(piVector.get(0).get(urlIndexMap.get(link)));
-        // System.out.println(urlIndexMap);
-        // System.out.println("====================================================================");
-
+       
         try{
             PrintWriter pageRankFile= new PrintWriter(new FileWriter("pageRank"+File.separator+doc));
             pageRankFile.println(piVector.get(0).get(urlIndexMap.indexOf(link)));
