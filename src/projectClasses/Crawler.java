@@ -23,18 +23,10 @@ public class Crawler implements ProjectTester, CrawlerActions {
         } catch (Exception e) {
           e.printStackTrace();
         }
-        //new File(dirName).mkdirs();
       } else {
         Arrays
           .stream(Objects.requireNonNull(new File(dirName).listFiles()))
           .forEach(File::delete);
-        /*File directoryPath = new File(dirName);
-                File[] dirFiles = directoryPath.listFiles();
-                if(dirFiles !=null) {
-                    for (File file : dirFiles) {
-                        file.delete();
-                    }
-                }*/
       }
     }
   }
@@ -96,9 +88,7 @@ public class Crawler implements ProjectTester, CrawlerActions {
     }
     generate_tf_tfIdf(pagesWordsCount, uniqueWords);
     String[] allUrls = new File("webdata").list();
-    //    for (String doc : allUrls) {
-    //     CrawlerActions.generate_pageRank(doc, allUrls, urlIndexMap, urlOutgoings);
-    //    }
+    
     CrawlerActions.generate_pageRank(allUrls, urlIndexMap, urlOutgoings);
   }
 
@@ -439,11 +429,6 @@ public class Crawler implements ProjectTester, CrawlerActions {
       }
     }
     
-    // else{
-    //   for (PagerankData data : dataList) {
-    //     data.setScore(1d);   //if no boosting, we want to round the values to 3 decimal places to calculate the scores
-    //   }
-    // }
     Collections.sort(dataList, new SearchResultComparator());
     List<SearchResult> result = new ArrayList<>();
 
