@@ -52,13 +52,13 @@ public class Crawler implements ProjectTester, CrawlerActions {
                 }   // this dictionary stores the tfs for every page.This dict is used such that we can compute the values as
                 the crawl loop is active simultaneously such that another loop does not have to be used to compute these values.
 */
-    List<String> urlIndexMap = new ArrayList<>();
-    HashMap<String, String[]> urlOutgoings = new HashMap<>();
+    List<String> urlIndexMap = new ArrayList<>(); // A list of all urls used as a map to map a url to an index value to make it easier to access the pagerank score from the result matrix in o(N) time later .
+    HashMap<String, String[]> urlOutgoings = new HashMap<>();  // A hashMap for all the urls and their respective outgoing links.
     String data = null;
     for (int index = 0; index < linkQueue.size(); index++) {
       String curr = linkQueue.get(linksAccessed);
       try {
-        data = WebRequester.readURL(curr);
+        data = WebRequester.readURL(curr);     // retrieving data from the webpage
       } catch (IOException e) {
         e.printStackTrace();
       }
@@ -66,7 +66,7 @@ public class Crawler implements ProjectTester, CrawlerActions {
       HashMap<String, Integer> temp = new HashMap<>();
       temp.put("totalWordNum", 0);
       pagesWordsCount.put(curr, temp);
-      Data parsedData = new Data(
+      Data parsedData = new Data(   //storing the parsed data as an immutable record object
         CrawlerHelpers.parseHtml(
           data,
           linkQueue,
@@ -76,9 +76,9 @@ public class Crawler implements ProjectTester, CrawlerActions {
         )
       );
       //            System.out.println(parsedData);
-      CrawlerHelpers.addDataToFile(curr, parsedData);
+      CrawlerHelpers.addDataToFile(curr, parsedData); //adding all the parsed data to the respective files
       linksAccessed++;
-      //convert to array sized linkque
+  
       urlIndexMap.add(curr);
       urlOutgoings.put(curr, parsedData.getLinks().strip().split("\\s+"));
     }
@@ -88,10 +88,13 @@ public class Crawler implements ProjectTester, CrawlerActions {
     }
     generate_tf_tfIdf(pagesWordsCount, uniqueWords);
     String[] allUrls = new File("webdata").list();
-    
+
     CrawlerActions.generate_pageRank(allUrls, urlIndexMap, urlOutgoings);
   }
 
+  /*
+   * generates the tf-idf and tf values and stores them in respective files
+  */
   private void generate_tf_tfIdf(
     HashMap<String, HashMap<String, Integer>> pagesWordsCount,
     List<String> uniqueWords
@@ -176,7 +179,7 @@ public class Crawler implements ProjectTester, CrawlerActions {
       file.close();
       return (List.of(urlData.split("\\s+")));
     } catch (Exception e) {
-        e.printStackTrace();
+      e.printStackTrace();
       return null;
     }
   }
@@ -325,6 +328,7 @@ public class Crawler implements ProjectTester, CrawlerActions {
 
   //=========================================== SEARCH =======================================================================
 
+  // returns hashmap of the tfidf values of the unique words entered through the search query
   private HashMap<String, Double> get_query_tfIdf(String phrase) {
     HashMap<String, Double> queryVector = new HashMap<>(); //map of words and their tfIdf values in the query
     List<String> uniqueWords = new ArrayList<>(); //list of unique words in the query
@@ -348,28 +352,28 @@ public class Crawler implements ProjectTester, CrawlerActions {
     return queryVector;
   }
 
- /**
-  * It implements the Comparator interface, which is a Java interface that defines a method called
-  * compare. The compare method takes two objects of the same type and returns an integer. The integer
-  * is negative if the first object is less than the second object, zero if the two objects are equal,
-  * and positive if the first object is greater than the second object
-  */
+  /**
+   * It implements the Comparator interface, which is a Java interface that defines a method called
+   * compare. The compare method takes two pagerank objects and returns an integer. 
+   * The integer is negative if the first object's score is is less than the second object's score,
+   * and positive it's greater
+   * if the scores are equal then it returns the integer of the similar logic but based on the title of the objects
+   */
   class SearchResultComparator implements Comparator<PagerankData> {
 
     /**
      * It compares two PagerankData objects and returns the result of the comparison.
-     * 
+     *
      * @param p1 The first object to be compared.
      * @param p2 The second object to compare.
-     * @return The difference between the two scores.
+     * @return 1 or -1 based on which is greater.
      */
     public int compare(PagerankData p1, PagerankData p2) {
       if (p1.getScore() == p2.getScore()) {
-        return((p1.getTitle()).compareTo(p2.getTitle()));
-      } 
-      else if (
-        p1.getScore() < p2.getScore()) {return 1;}
-      else return -1;
+        return ((p1.getTitle()).compareTo(p2.getTitle()));
+      } else if (p1.getScore() < p2.getScore()) {
+        return 1;
+      } else return -1;
     }
   }
 
@@ -387,7 +391,7 @@ public class Crawler implements ProjectTester, CrawlerActions {
     A copy of this interface is included on the project's BrightSpace page.
      */
   public List<SearchResult> search(String query, boolean boost, int topIndex) {
-    List<PagerankData> dataList = new ArrayList<>();
+    List<PagerankData> dataList = new ArrayList<>();  //list of all the pageRankData for all the urls
     HashMap<String, Double> queryVectorDict = get_query_tfIdf(query);
     File[] allFiles = CrawlerHelpers.get_url_list("webData");
     for (File aFile : allFiles) {
@@ -395,6 +399,7 @@ public class Crawler implements ProjectTester, CrawlerActions {
       String url = CrawlerHelpers
         .changeFilenameToLink(link)
         .replace(".txt", "");
+      //calculating cosineSim
       double numerator = 0d;
       double leftDenominator = 0d;
       double rightDenominator = 0d;
@@ -418,24 +423,24 @@ public class Crawler implements ProjectTester, CrawlerActions {
       }
       dataList.add(new PagerankData(url, cosineSim));
     }
+    //calculation score based on boost input
     if (boost) {
       for (PagerankData data : dataList) {
         data.setScore(this.getPageRank(data.getUrl()));
       }
-    }
-    else{
+    } else { //this is done to round the cosineSim data to 3d places. We aren't directly storing 3d in cosineSim as boosting values might get affected by the rounding off. So only rounding later once boosting=false
       for (PagerankData data : dataList) {
         data.setScore(1d);
       }
     }
-    
-    Collections.sort(dataList, new SearchResultComparator());
+
+    Collections.sort(dataList, new SearchResultComparator());  //sorting all our results.
     List<SearchResult> result = new ArrayList<>();
 
-    int numOfResults;
+    int numOfResults; //how many results to display? 
     if (topIndex <= dataList.size()) {
       numOfResults = topIndex;
-    } else {
+    } else { // eg: 10 results cannot be displayed on array result of 8
       numOfResults = dataList.size();
     }
 
@@ -454,12 +459,12 @@ public class Crawler implements ProjectTester, CrawlerActions {
   }
 
   public static void main(String[] args) {
-          //   Crawler test= new Crawler();
-          //  test.initialize();
-          //   test.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html");
-          //   List<SearchResult> res = (test.search("apple peach pear tomato pear", true, 10));
-          //   for(SearchResult r:res){
-          //     System.out.println(r.getTitle()+" "+ r.getScore());
-          //   }
+    //   Crawler test= new Crawler();
+    //  test.initialize();
+    //   test.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html");
+    //   List<SearchResult> res = (test.search("apple peach pear tomato pear", true, 10));
+    //   for(SearchResult r:res){
+    //     System.out.println(r.getTitle()+" "+ r.getScore());
+    //   }
   }
 }
