@@ -472,6 +472,9 @@ public class Crawler implements ProjectTester, CrawlerActions {
           //   Crawler test= new Crawler();
           //  test.initialize();
           //   test.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html");
-          //   List<SearchResult> res = (test.search("peach papaya", false, 10));
+          //   List<SearchResult> res = (test.search("apple peach pear tomato pear", true, 10));
+          //   for(SearchResult r:res){
+          //     System.out.println(r.getTitle()+" "+ r.getScore());
+          //   }
   }
 }

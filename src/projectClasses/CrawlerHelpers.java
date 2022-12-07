@@ -98,7 +98,7 @@ public interface CrawlerHelpers {
                 int titleStartIndex = string.indexOf("<title>");
                 endIndex = string.indexOf("</title>");
                 title = string.substring(titleStartIndex + 7,endIndex);
-                string = string.replace(title,"");
+                string = string.replace(">"+title+"<","");
                 titleFound = true;
             }
             //for <p >
@@ -113,7 +113,7 @@ public interface CrawlerHelpers {
             if (aStartIndex != -1){
                 endIndex = aStartIndex + string.substring(aStartIndex).indexOf(">");
                 //reference position of href attribute from the postion of the <a tag, taken from 0.
-                int hrefIndex = string.substring(aStartIndex,endIndex).indexOf("href=\"");
+                int hrefIndex = string.substring(aStartIndex,endIndex).indexOf("href=");
 //                links.append(' ').append(string.substring(aStartIndex + hrefIndex + 6, endIndex - 1));
                 links+= (' ')+(string.substring(aStartIndex + hrefIndex + 6, endIndex - 1));
                 int closingTag = string.indexOf("</a>");
@@ -131,6 +131,7 @@ public interface CrawlerHelpers {
                 activeLoop = false;
             }
         }
+        
         String fulllinks = getLinks(links, url, linkQueue);
         for (String word : words.strip().split("\\s+")){
             if(!Objects.equals(word, "")){

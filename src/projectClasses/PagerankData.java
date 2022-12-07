@@ -24,23 +24,6 @@ public class PagerankData implements SearchResult {
     }
 
 
-
-    // public int compareTo(PagerankData urlData){
-    //     // if(this.ORDER.equals("asc")){
-    //     //     return this.score.compareTo(urlData.getScore());   //for ascending order if specified
-    //     // }
-    //     // double urlScore= urlData.getScore();
-    //     // DecimalFormat df = new DecimalFormat("#.###");
-    //     // Double urlScoreRounded= Double.valueOf(df.format(urlData.score));
-    //     // Double thisScoreRounded= Double.valueOf(df.format(this.score));
-    //     if(this.score== urlData.score){
-    //         return this.title.compareTo(urlData.getTitle());  //IF same score then sort by title in ascending order
-    //     }
-    //     // return Double.compare(urlScoreRounded, thisScoreRounded);
-    //     return urlData.score.compareTo(this.score);
-    // }
-
-
     public String getUrl(){ 
         return this.url;
     }
@@ -55,17 +38,9 @@ It calculates the score by multiplying the score of each url by its pagerank val
 :param cosine_similarity: dictionary of the cosine similarity of every url.
 */
 public void setScore(Double pagerank){
-    // HashMap<String,Double> score=new HashMap<>();
-    // for (PagerankData dataSet : treeData){
-        // dataSet.setScore(dataSet.getDataScore() * this.getPageRank(dataSet.getUrl()));
-        // score.put(url, cosine_similarity.get(url) * this.getPageRank(url));
-    // }
-    // return score;
-    // System.out.println("coSIne: "+ this.score);
-    // System.out.println("URL: "+url+ " => "+ pagerank);
     DecimalFormat df = new DecimalFormat("#.###");
     this.score= Double.valueOf(df.format(this.score * pagerank));
-    // this.score= (this.score * pagerank *1000d)/1000d;
+    // this.score= Math.round(this.score * pagerank *1000d)/1000d;
 }
 
 public String getTitle(){

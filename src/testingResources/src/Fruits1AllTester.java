@@ -6,8 +6,8 @@ import projectClasses.ProjectTester;
 public class Fruits1AllTester {
     public static void main(String[] args) throws Exception {
         ProjectTester tester = new Crawler(); //Instantiate your own ProjectTester instance here
-        // tester.initialize();
-        // tester.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html");
+        tester.initialize();
+        tester.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html");
 
         Fruits1OutgoingLinksTester.runTest(tester);
         Fruits1IncomingLinksTester.runTest(tester);
