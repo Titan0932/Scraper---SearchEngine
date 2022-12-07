@@ -5,7 +5,7 @@ import java.nio.file.*;
 import java.util.*;
 
 public interface CrawlerHelpers {
-
+    //an interface that is used by the helper functions for minute tasks. These are not instance specific.
 
     static boolean check_dir_exists(String dirname){
         Path path = Paths.get(dirname);
@@ -15,8 +15,7 @@ public interface CrawlerHelpers {
     /*
        Adds the word, title and links data in json file for every url
         //:param url: url from which the data has been crawled
-        //:param words, links: the string of words/ links contained in url seperated by a single space
-        //:param title: string of the title of the url
+        //:param Data: a record object that stored the parsed word, url, title for a url
     */
     public static void addDataToFile(String url, Data parsedData){
         String filename = changeLinkToFileName(url) + ".txt";
