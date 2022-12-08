@@ -1,10 +1,10 @@
-banana
+pear
 0.0
-apple
+banana
 0.0
 coconut
 0.03445056743238052
 peach
 0.03181747972146227
-pear
+apple
 0.0

@@ -20,6 +20,7 @@ public class view extends Pane{
     private Button searchButton;
     private ToggleButton pageRank;
     private Crawler crawl;
+    private ListView<Integer> number;
     public view(){
         crawl = new Crawler();
         Label label1 = new Label("Search");
@@ -31,23 +32,26 @@ public class view extends Pane{
         Label label2 = new Label("Result");
         label2.relocate(60,65);
         rList = new ListView<String>();
-        rList.setPrefSize(275,150);
-        rList.relocate(120,65);
+        rList.setPrefSize(225,235);
+        rList.relocate(170,65);
         searchButton = new Button("Search");
         searchButton.setStyle("-fx-font: 12 arial; -fx-base: rgb(0,100,0); -fx-text-fill: rgb(255,255,255);");
-        searchButton.relocate(170,240);
+        searchButton.relocate(170,340);
         pageRank = new ToggleButton("Boost");
-        pageRank.relocate(300,240);
+        pageRank.relocate(300,340);
+        Integer i[] = {1,2,3,4,5,6,7,8,9,10};
+        number = new ListView<Integer>();
+        number.setPrefSize(35, 235);
+        number.relocate(120,65);
+        number.setItems(FXCollections.observableArrayList(i));
 
-        getChildren().addAll(label1,label2,search, rList,searchButton, pageRank);
-        setPrefSize(500,300);
+        getChildren().addAll(label1,label2,search, rList,searchButton, pageRank, number);
+        setPrefSize(500,400);
     }
     public TextField getSearch(){
         return search;
     }
-    public ListView<String> getrList(){
-        return rList;
-    }
+
     public Button getSearchButton(){
         return searchButton;
     }
@@ -58,11 +62,12 @@ public class view extends Pane{
     public ListView<String> getResultList(){
         return rList;
     }
-    public void update(){
+    public void update(int i){
         ArrayList<String> result = new ArrayList<>();
         for(SearchResult x: crawl.search(search.getText(), pageRank.isSelected(), 10)){
             result.add(x.getTitle());
         }
         rList.setItems(FXCollections.observableArrayList(result));
+        number.getSelectionModel().select(i);
     }
 }
