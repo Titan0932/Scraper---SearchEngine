@@ -9,6 +9,9 @@ import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.Pane;
 import javafx.scene.control.Button;
 import java.awt.*;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 import javafx.scene.control.ToggleButton;
 
 public class view extends Pane{
@@ -16,7 +19,9 @@ public class view extends Pane{
     private ListView<String> rList;
     private Button searchButton;
     private ToggleButton pageRank;
+    private Crawler crawl;
     public view(){
+        crawl = new Crawler();
         Label label1 = new Label("Search");
         label1.relocate(60,30);
 
@@ -40,8 +45,24 @@ public class view extends Pane{
     public TextField getSearch(){
         return search;
     }
+    public ListView<String> getrList(){
+        return rList;
+    }
+    public Button getSearchButton(){
+        return searchButton;
+    }
+    public ToggleButton getPageRank(){
+        return pageRank;
+    }
 
     public ListView<String> getResultList(){
         return rList;
+    }
+    public void update(){
+        ArrayList<String> result = new ArrayList<>();
+        for(SearchResult x: crawl.search(search.getText(), pageRank.isSelected(), 10)){
+            result.add(x.getTitle());
+        }
+        rList.setItems(FXCollections.observableArrayList(result));
     }
 }

@@ -15,6 +15,8 @@ public class GUI extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        Crawler crawl = new Crawler();
+        crawl.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html");
         Pane aPane = new Pane();
         view v = new view();
         aPane.getChildren().add(v);
@@ -23,6 +25,11 @@ public class GUI extends Application {
         primaryStage.setScene(new Scene(aPane));
 
         primaryStage.show();
-
+        v.getSearchButton().setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                v.update();
+            }
+        });
     }
 }
