@@ -1,0 +1,147 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Crawler",
+            "request": "launch",
+            "mainClass": "projectClasses.Crawler",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch GUI",
+            "request": "launch",
+            "mainClass": "projectClasses.GUI",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch WebRequester",
+            "request": "launch",
+            "mainClass": "projectClasses.WebRequester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fruits1AllTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.Fruits1AllTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fruits1IDFTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.Fruits1IDFTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fruits1IncomingLinksTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.Fruits1IncomingLinksTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fruits1OutgoingLinksTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.Fruits1OutgoingLinksTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fruits1PageRanksTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.Fruits1PageRanksTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fruits1SearchTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.Fruits1SearchTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fruits1TFIDFTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.Fruits1TFIDFTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fruits1TFTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.Fruits1TFTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch FruitsTinyAllTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.FruitsTinyAllTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch FruitsTinyIDFTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.FruitsTinyIDFTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch FruitsTinyIncomingLinksTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.FruitsTinyIncomingLinksTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch FruitsTinyOutgoingLinksTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.FruitsTinyOutgoingLinksTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch FruitsTinyPageRanksTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.FruitsTinyPageRanksTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch FruitsTinySearchTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.FruitsTinySearchTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch FruitsTinyTFIDFTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.FruitsTinyTFIDFTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
+            "name": "Launch FruitsTinyTFTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.FruitsTinyTFTester",
+            "projectName": "Crawler_fe363129"
+        }
+    ]
+}
