@@ -35,7 +35,28 @@ public class GUI extends Application {
             @Override
             public void handle(MouseEvent mouseEvent) {
                 int index = v.getResultList().getSelectionModel().getSelectedIndex();
-                v.update(index);
+                v.update2(index);
+            }
+        });
+        v.getNumber().setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                int index = v.getResultList().getSelectionModel().getSelectedIndex();
+                v.update2(index);
+            }
+        });
+        v.getScores().setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                int index = v.getResultList().getSelectionModel().getSelectedIndex();
+                v.update2(index);
+            }
+        });
+        v.getPageRank().setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                int index = v.getResultList().getSelectionModel().getSelectedIndex();
+                v.updateToggle();
             }
         });
     }
