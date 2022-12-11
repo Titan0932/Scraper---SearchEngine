@@ -20,7 +20,7 @@ public class GUI extends Application {
         Pane aPane = new Pane();
         view v = new view();
         aPane.getChildren().add(v);
-        primaryStage.setTitle("Search Engine");
+        primaryStage.setTitle("SearchBro");
         primaryStage.setResizable(false);
         primaryStage.setScene(new Scene(aPane));
 
@@ -41,14 +41,14 @@ public class GUI extends Application {
         v.getNumber().setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                int index = v.getResultList().getSelectionModel().getSelectedIndex();
+                int index = v.getNumber().getSelectionModel().getSelectedIndex();
                 v.update2(index);
             }
         });
         v.getScores().setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
-                int index = v.getResultList().getSelectionModel().getSelectedIndex();
+                int index = v.getScores().getSelectionModel().getSelectedIndex();
                 v.update2(index);
             }
         });

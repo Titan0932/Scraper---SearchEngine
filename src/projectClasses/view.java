@@ -8,6 +8,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 
+
+
+
+
 import java.awt.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -22,7 +26,7 @@ public class view extends Pane{
     private Crawler crawl;
     private ListView<Integer> number;
     private ListView<Double> scores;
-    private Label label1,label2,label3, label4;
+    private Label label1,label2,label3, label4, error;
     public view(){
         crawl = new Crawler();
         label1 = new Label("Search");
@@ -51,8 +55,8 @@ public class view extends Pane{
 
         number = new ListView<Integer>();
 
-        number.setPrefSize(35, 235);
-        number.relocate(90,110);
+        number.setPrefSize(45, 235);
+        number.relocate(80,110);
 
         label3 = new Label("Scores");
         label3.relocate(275,90);
@@ -60,7 +64,9 @@ public class view extends Pane{
         scores.setPrefSize(90,235);
         scores.relocate(275,110);
 
-        getChildren().addAll(label1,label2,search, rList,searchButton, pageRank, number, scores,label3, amountResults,label4);
+        error = new Label();
+        error.relocate(90,5);
+        getChildren().addAll(label1,label2,search, rList,searchButton, pageRank, number, scores,label3, amountResults,label4, error);
         setPrefSize(435,375);
     }
     public TextField getSearch(){
@@ -84,30 +90,40 @@ public class view extends Pane{
         return  scores;
     }
     public void update(int i){
-        ArrayList<String> result = new ArrayList<>();
-        Integer amount = Integer.parseInt(amountResults.getText());
-        Integer[] numbers = new Integer[amount];
-        ArrayList<Double> score= new ArrayList<>();
-        for(int j = 0; j<amount; j++){
-            numbers[j] = j+1;
+        try{
+            error.setVisible(false);
+            ArrayList<String> result = new ArrayList<>();
+            Integer amount = Integer.parseInt(amountResults.getText());
+            Integer[] numbers = new Integer[amount];
+            ArrayList<Double> score= new ArrayList<>();
+            for(int j = 0; j<amount; j++){
+                numbers[j] = j+1;
 
+            }
+
+            for(SearchResult x: crawl.search(search.getText(), pageRank.isSelected(), amount)){
+                result.add(x.getTitle());
+                score.add(x.getScore());
+            }
+            rList.setItems(FXCollections.observableArrayList(result));
+            number.setItems(FXCollections.observableArrayList(numbers));
+            scores.setItems(FXCollections.observableArrayList(score));
+            number.getSelectionModel().select(i);
+            scores.getSelectionModel().select(i);
+            rList.getSelectionModel().select(i);
+        }catch(NumberFormatException e){
+            error.setText("Please provide an Integer for Amount of Results");
+            error.setVisible(true);
         }
 
-        for(SearchResult x: crawl.search(search.getText(), pageRank.isSelected(), amount)){
-            result.add(x.getTitle());
-            score.add(x.getScore());
-        }
-        rList.setItems(FXCollections.observableArrayList(result));
-        number.setItems(FXCollections.observableArrayList(numbers));
-        scores.setItems(FXCollections.observableArrayList(score));
-        number.getSelectionModel().select(i);
-        scores.getSelectionModel().select(i);
-        rList.getSelectionModel().select(i);
     }
     public void update2(int i){
         number.getSelectionModel().select(i);
         scores.getSelectionModel().select(i);
         rList.getSelectionModel().select(i);
+        number.scrollTo(i);
+        scores.scrollTo(i);
+        rList.scrollTo(i);
     }
     public void updateToggle(){
         if(pageRank.isSelected()){
