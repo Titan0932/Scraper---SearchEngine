@@ -4,8 +4,8 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
-public interface CrawlerHelpers {
-    //an interface that is used by the helper functions for minute tasks. These are not instance specific.
+public class CrawlerHelpers {
+    //a class that is used by the helper functions for minute tasks. These are not instance specific.
 
     static boolean check_dir_exists(String dirname){
         Path path = Paths.get(dirname);
@@ -56,9 +56,9 @@ public interface CrawlerHelpers {
         return name;
     }
 
-/*
-    returns the list of urls crawled that is present in the webData directory
-*/
+    /*
+        returns the list of urls crawled that is present in the webData directory
+    */
     public static File[] get_url_list(String dir){
         File aDir= new File(dir);
         if(aDir.exists()){
@@ -69,83 +69,115 @@ public interface CrawlerHelpers {
 
 
     /*
-    It parses the html file and extracts the links and words from it.
-
-    :param string: the html string
-    :param linkQueue: A queue of links to be parsed
-    :param url: the url of the page from where we're parsing
-    :param pagesWordsCount: a dictionary that keeps track of the number of words in each page
-    :param uniqueWords: a dictionary that contains all the unique words in the pages that have been parsed so far
-*/
-    public static List<String> parseHtml(String string,
-                                         List<String> linkQueue,
-                                         String url,
-                                         HashMap<String, HashMap<String, Integer>> pagesWordsCount,
-                                         List<String> uniqueWords) {
-        boolean activeLoop = true;
-
-        String words="";
-        String links="";
-        boolean titleFound = false;
-        int endIndex;
-        String title= null;
-        // System.out.println("STRINGG: "+ string);
-        while (activeLoop) {
-            //for <title >
-            if (!titleFound) {
-                int titleStartIndex = string.indexOf("<title>");
-                endIndex = string.indexOf("</title>");
-                title = string.substring(titleStartIndex + 7,endIndex);
-                string = string.replace(">"+title+"<","");
-                titleFound = true;
+    It generates a new matrix after scalar multiplication with the generated adj matrix with a factor of (1-Alpha)
+    :param probabilityTransitionMatrix: 2-D matrix which already has all the probabilitities mapped for all links
+    */
+    public static List<List<Double>> generate_scaled_adjacentMatrix(List<List<Double>> probabilityTransitionMatrix) {
+        List<List<Double>> newMatrix = new ArrayList<>();
+        newMatrix.addAll(probabilityTransitionMatrix);
+        int rowIndex=0;
+        for (List<Double> row : (probabilityTransitionMatrix)){
+            int itemIndex=0;
+            for (double item : (row)){
+                newMatrix.get(rowIndex).set(itemIndex, item * (1 - Constants.CONST_ALPHA));
+                itemIndex++;
             }
-            //for <p >
-            int pStartIndex = string.indexOf("<p>");
-            if (pStartIndex != -1){
-                endIndex = string.indexOf("</p>");
-                words+=(' ')+(string.substring(pStartIndex + 3, endIndex).replace("\n", " "));
-                string = string.replace(string.substring(pStartIndex,endIndex+3),"");
-            }
-            //for <a > tag
-            int aStartIndex = string.indexOf("<a ");
-            if (aStartIndex != -1){
-                endIndex = aStartIndex + string.substring(aStartIndex).indexOf(">");
-                //reference position of href attribute from the postion of the <a tag, taken from 0.
-                int hrefIndex = string.substring(aStartIndex,endIndex).indexOf("href=");
-//                links.append(' ').append(string.substring(aStartIndex + hrefIndex + 6, endIndex - 1));
-                links+= (' ')+(string.substring(aStartIndex + hrefIndex + 6, endIndex - 1));
-                int closingTag = string.indexOf("</a>");
-                string = string.replace(string.substring(aStartIndex,closingTag + 3),"");
-            }
-            // for <p....>tag with attributes
-            int pAttributeStartIndex = string.indexOf("<p ");
-            if (pAttributeStartIndex != -1) {
-                int end_IndexOf_StartingTag = string.substring(pAttributeStartIndex).indexOf(">");
-                int closingTag = string.indexOf("</p>");
-//                words.append(' ').append(string.substring(end_IndexOf_StartingTag + 1, closingTag));
-                words+=(' ')+(string.substring(end_IndexOf_StartingTag + 1, closingTag));
-            }
-            if (titleFound && pStartIndex == -1 && aStartIndex ==-1 && pAttributeStartIndex ==-1){
-                activeLoop = false;
-            }
+            rowIndex++;
         }
-        
-        String fulllinks = getLinks(links, url, linkQueue);
-        for (String word : words.strip().split("\\s+")){
-            if(!Objects.equals(word, "")){
-                pagesWordsCount.get(url).put("totalWordNum",pagesWordsCount.get(url).get("totalWordNum") +1 );
+        return newMatrix;
+    }
+
+
+    /*
+    It generates a link transition matrix from the given urlIndexMap.
+    :param urlIndexMap: A dictionary that maps a URL to an index.
+    :param urlOutgoings: A dictionary that maps a url to its outgoing links
+    */
+    public static List<List<Double>> generate_probabilityTransitionMatrix(List<String> urlIndexMap,HashMap<String, String[]> urlOutgoings) {
+        int totalPages = (urlIndexMap).size();
+        List<List<Double>> adjacencyMatrix= new ArrayList<>();
+        for (String pageUrl : urlIndexMap) {
+            String[] urlOutgoingLinks = urlOutgoings.get(pageUrl);
+            float totalOnes = (urlOutgoingLinks).length;
+            List<Double> newMatrix= new ArrayList<>();
+            int availableones = (urlOutgoingLinks).length;
+            if (totalOnes == 0){  //if no put going links then all elements = 1 / N
+                for(int index=0; index<totalPages; index++) {
+                    newMatrix.add(0d);
+                }
             }
-            if (!uniqueWords.contains(word)){
-                uniqueWords.add(word);
+            else {
+                //            for pageIndex, page in enumerate (urlIndexMap)
+                int pageIndex=0;
+                for (String page: urlIndexMap) {
+                    if (availableones == 0) { //To make it a bit efficient as if no more 1 s is left we know all that follows is 0 and we can terminate loop
+                        for (int index = 0; index < totalPages - pageIndex; index++) {
+                            newMatrix.add(0d);
+                        }
+                        break;
+                    }
+                    if (Arrays.asList(urlOutgoingLinks).contains(page)) {
+                        newMatrix.add((double)1 / totalOnes);
+                        availableones -= 1;
+                    } else {
+                        newMatrix.add(0d);
+                    }
+                    pageIndex++;
+                }
             }
-            if (pagesWordsCount.get(url).containsKey(word)){
-                pagesWordsCount.get(url).put(word,pagesWordsCount.get(url).get(word)+1 );
-            }
-            else{
-                pagesWordsCount.get(url).put(word, 1 );
-            }
+            adjacencyMatrix.add(newMatrix);
         }
-        return Arrays.asList(title, words, fulllinks);
+        return adjacencyMatrix;
+    }
+
+    /*
+    It generates the final matrix after considering the random transport value and adds it to the result of (1-Alpha)*probabilitytransitionMatrix
+    :param scaledAdjacentMatrix: result matrix of (1-Alpha)*probabilitytransitionMatrix
+    */
+    public static List<List<Double>> generate_finalMatrix(List<List<Double>> scaledAdjacentMatrix) {
+        List<List<Double>> newMatrix = new ArrayList<>();
+        newMatrix.addAll(scaledAdjacentMatrix);
+        Float matrixLength = (float) (scaledAdjacentMatrix).size();
+        int rowIndex=0;
+        for (List<Double> row : (scaledAdjacentMatrix)){
+            for (int itemIndex=0; itemIndex< row.size();itemIndex++ ) {
+                newMatrix.get(rowIndex).set(itemIndex,newMatrix.get(rowIndex).get(itemIndex)+ (double) (Constants.CONST_ALPHA / matrixLength));
+            }
+            rowIndex++;
+        }
+        return newMatrix;
+    }
+
+    /*
+    It multiplies two matrices together.
+    :param a,b: matrices to be multiplied
+    */
+    public static List<List<Double>> mult_matrix(List<List<Double>> matrixX, List<List<Double>> matrixY) {
+        List<List<Double>> resultMatrix = new ArrayList<>();
+        resultMatrix.add(new ArrayList<>());
+        for (int coly=0; coly< (matrixY.get(0)).size(); coly++ ){
+            Double colValue = 0.0d;
+            for (int rowy=0; rowy <(matrixY).size(); rowy++){
+                colValue += matrixX.get(0).get(rowy) * matrixY.get(rowy).get(coly);
+            }
+            resultMatrix.get(0).add((double) colValue);
+        }
+        return resultMatrix;
+    }
+
+    /*
+    Finds the euclidian distance between two matrices
+    :param a,b: matrices of whose the euclidian distance is to be calculated
+    */
+    public static Double euclidean_dist(List<List<Double>> a, List<List<Double>> b) {
+        Double eDistance = 0.0d;
+        if ((a).size() > 1 || (b).size() > 1){
+            return -1.0d;
+        }
+        for (int counter=0; counter<a.size(); counter++){
+            eDistance += (double)Math.pow((a.get(0).get(counter) - b.get(0).get(counter)), 2);
+        }
+        return (double)Math.pow(eDistance, 0.5);
     }
 
 
@@ -181,6 +213,8 @@ public interface CrawlerHelpers {
         }
         return urls.toString();
     }
+
+
 
 
 }
