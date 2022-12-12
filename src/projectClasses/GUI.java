@@ -13,7 +13,7 @@ public class GUI extends Application {
         launch(args);
     }
 
-    @Override
+    @Override//Creates stage
     public void start(Stage primaryStage) {
         Crawler crawl = new Crawler();
 //        crawl.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-2.html");
@@ -25,33 +25,14 @@ public class GUI extends Application {
         primaryStage.setScene(new Scene(aPane));
 
         primaryStage.show();
+        //Checks for search button click, after it is clicked the program should perform search using the given parameters
         v.getSearchButton().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 v.update(0);
             }
         });
-        v.getResultList().setOnMousePressed(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                int index = v.getResultList().getSelectionModel().getSelectedIndex();
-                v.update2(index);
-            }
-        });
-        v.getNumber().setOnMousePressed(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                int index = v.getNumber().getSelectionModel().getSelectedIndex();
-                v.update2(index);
-            }
-        });
-        v.getScores().setOnMousePressed(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                int index = v.getScores().getSelectionModel().getSelectedIndex();
-                v.update2(index);
-            }
-        });
+        //For user to decide whether they want the page rank boost in their
         v.getPageRank().setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
