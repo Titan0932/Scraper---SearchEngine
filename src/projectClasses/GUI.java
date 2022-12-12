@@ -15,7 +15,7 @@ public class GUI extends Application {
 
     @Override//Creates stage
     public void start(Stage primaryStage) {
-        Crawler crawl = new Crawler();
+        ProjectTesterImp crawl = new ProjectTesterImp();
 //        crawl.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-2.html");
         Pane aPane = new Pane();
         view v = new view();

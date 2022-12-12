@@ -2,12 +2,12 @@ package testingResources.src;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import projectClasses.Crawler;
+import projectClasses.ProjectTesterImp;
 import projectClasses.ProjectTester;
 
 public class Fruits1TFTester {
     public static void main(String[] args) throws Exception {
-        ProjectTester tester = new Crawler(); //Instantiate your own ProjectTester instance here
+        ProjectTester tester = new ProjectTesterImp(); //Instantiate your own ProjectTester instance here
         tester.initialize();
         tester.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html");
         runTest(tester);

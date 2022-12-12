@@ -14,11 +14,20 @@ public class view extends Pane{
     private ListView<String> rList;
     private Button searchButton;
     private ToggleButton pageRank;
+<<<<<<< HEAD
     private Crawler crawl;
     private Label label1,label2,label3, label4, error;
     public view(){
         crawl = new Crawler();
         //takes user searchquery input
+=======
+    private ProjectTesterImp crawl;
+    private ListView<Integer> number;
+    private ListView<Double> scores;
+    private Label label1,label2,label3, label4, error;
+    public view(){
+        crawl = new ProjectTesterImp();
+>>>>>>> structural_changes--ANJ
         label1 = new Label("Search");
         label1.relocate(40,30);
         search = new TextField();

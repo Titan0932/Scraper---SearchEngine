@@ -14,7 +14,7 @@
             "type": "java",
             "name": "Launch Crawler",
             "request": "launch",
-            "mainClass": "projectClasses.Crawler",
+            "mainClass": "projectClasses.ProjectTesterImp",
             "projectName": "Crawler_fe363129"
         },
         {

@@ -7,13 +7,13 @@ import java.util.List;
 
 // import javax.naming.directory.SearchResult;
 
-import projectClasses.Crawler;
+import projectClasses.ProjectTesterImp;
 import projectClasses.ProjectTester;
 import projectClasses.SearchResult;
 
 public class FruitsTinySearchTester {
     public static void main(String[] args) throws Exception {
-        ProjectTester tester = new Crawler(); //Instantiate your own ProjectTester instance here
+        ProjectTester tester = new ProjectTesterImp(); //Instantiate your own ProjectTester instance here
         tester.initialize();
         tester.crawl("https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html");
         runTest(tester);
