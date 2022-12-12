@@ -3,9 +3,17 @@ package projectClasses;
 import java.io.*;
 import java.util.*;
 
-public class Crawl {
+public class Crawl{
 
-    List<String> linkQueue = new ArrayList<>();
+    private List<String> linkQueue = new ArrayList<>();
+    private ProjectTesterImp tester;
+
+
+
+    public Crawl(ProjectTesterImp tester){
+        this.tester= tester;
+    }
+
 
     /*
           This method performs a crawl starting at the given seed URL.
@@ -15,7 +23,6 @@ public class Crawl {
            */
     public void crawl(String seedURL) {
         List<String> uniqueWords = new ArrayList<>(); // list of all the unique words that are present in all of the urls crawled
-//        this.initialize();
         int linksAccessed = 0; // the counter for the number of links accessed
         this.linkQueue.add(seedURL);
         HashMap<String, HashMap<String, Integer>> pagesWordsCount = new HashMap<>();
@@ -97,7 +104,7 @@ public class Crawl {
                                 )
                         );
                 for (String uniqueItem : uniqueWords) {
-                    double idf = Crawler.getIDF(uniqueItem);
+                    double idf = this.tester.getIDF(uniqueItem);
                     if (!pagesWordsCount.get(url).containsKey(uniqueItem)) {
                         newTf = 0;
                     } else {

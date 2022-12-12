@@ -23,12 +23,12 @@ public class view extends Pane{
     private ListView<String> rList;
     private Button searchButton;
     private ToggleButton pageRank;
-    private Crawler crawl;
+    private ProjectTesterImp crawl;
     private ListView<Integer> number;
     private ListView<Double> scores;
     private Label label1,label2,label3, label4, error;
     public view(){
-        crawl = new Crawler();
+        crawl = new ProjectTesterImp();
         label1 = new Label("Search");
         label1.relocate(40,30);
         search = new TextField();

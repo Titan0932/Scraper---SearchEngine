@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
-public class Crawler implements ProjectTester {
+public class ProjectTesterImp implements ProjectTester {
 
 
   /*
@@ -39,7 +39,7 @@ public class Crawler implements ProjectTester {
     All data required for later search queries should be saved in files once this completes.
      */
   public void crawl(String seedURL) {
-    Crawl crawler= new Crawl();
+    Crawl crawler= new Crawl(this);
     this.initialize();
     crawler.crawl(seedURL);
   }
@@ -507,12 +507,12 @@ public class Crawler implements ProjectTester {
     A copy of this interface is included on the project's BrightSpace page.
      */
   public List<SearchResult> search(String query, boolean boost, int topIndex) {
-    SearchEngine searcher= new SearchEngine();
+    SearchEngine searcher= new SearchEngine(this);
     return searcher.search(query, boost, topIndex);
   }
 
   public static void main(String[] args) {
-    //   Crawler test= new Crawler();
+    //   Crawler test= new ProjectTesterImp();
     //  test.initialize();
     //   test.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html");
     //   List<SearchResult> res = (test.search("apple peach pear tomato pear", true, 10));

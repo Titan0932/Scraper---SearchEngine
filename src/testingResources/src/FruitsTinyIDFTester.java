@@ -6,7 +6,7 @@ import projectClasses.*;
 
 public class FruitsTinyIDFTester {
     public static void main(String[] args) throws Exception {
-        ProjectTester tester = new Crawler(); //Instantiate your own projectClasses.ProjectTester instance here
+        ProjectTester tester = new ProjectTesterImp(); //Instantiate your own projectClasses.ProjectTester instance here
         tester.initialize();
         tester.crawl("https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html");
         runTest(tester);

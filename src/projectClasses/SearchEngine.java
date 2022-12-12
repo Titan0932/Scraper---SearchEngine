@@ -3,8 +3,13 @@ package projectClasses;
 import java.io.File;
 import java.util.*;
 
-public class SearchEngine {
+public class SearchEngine{
+    private ProjectTesterImp tester;
 
+
+    public SearchEngine(ProjectTesterImp tester){
+        this.tester= tester;
+    }
 
     // returns hashmap of the tfidf values of the unique words entered through the search query
     private HashMap<String, Double> get_query_tfIdf(String phrase) {
@@ -24,7 +29,7 @@ public class SearchEngine {
         }
         for (String uniqueWord : uniqueWords) {
             double tf = wordCount.get(uniqueWord) / totalWords;
-            double idf = getIDF(uniqueWord);
+            double idf = this.tester.getIDF(uniqueWord);
             queryVector.put(uniqueWord, (Math.log(1 + tf) * idf) / Math.log(2));
         }
         return queryVector;
@@ -82,7 +87,7 @@ public class SearchEngine {
             double leftDenominator = 0d;
             double rightDenominator = 0d;
             for (String wordInQuery : queryVectorDict.keySet()) {
-                double doc_tfIdf = (double) this.getTFIDF(url, wordInQuery);
+                double doc_tfIdf = (double) this.tester.getTFIDF(url, wordInQuery);
                 double query_tfIdf = queryVectorDict.get(wordInQuery);
                 numerator += query_tfIdf * doc_tfIdf;
                 leftDenominator += Math.pow(query_tfIdf, 2);
@@ -104,7 +109,7 @@ public class SearchEngine {
         //calculation score based on boost input
         if (boost) {
             for (PagerankData data : dataList) {
-                data.setScore(this.getPageRank(data.getUrl()));
+                data.setScore(this.tester.getPageRank(data.getUrl()));
             }
         } else { //this is done to round the cosineSim data to 3d places. We aren't directly storing 3d in cosineSim as boosting values might get affected by the rounding off. So only rounding later once boosting=false
             for (PagerankData data : dataList) {
