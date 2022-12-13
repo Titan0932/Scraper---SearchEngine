@@ -5,7 +5,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
-
+/*
+* A class that implements the ProjectTester interface and glues together the entire project such that testing can be carried out on it.
+* */
 public class ProjectTesterImp implements ProjectTester {
 
 
