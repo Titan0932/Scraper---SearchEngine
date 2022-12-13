@@ -128,10 +128,10 @@ public class SearchEngine{
         }
 
         int resultCounter = 1;
-        for (PagerankData data : dataList) {
+        for (SearchResult data : dataList) {
             // System.out.println("URL: "+ data.getUrl()+ " ==> "+ data.getScore());
             if (resultCounter <= numOfResults) {
-                result.add((SearchResult) data);
+                result.add(data);
             } else {
                 break;
             }
