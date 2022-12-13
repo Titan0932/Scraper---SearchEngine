@@ -33,10 +33,6 @@ public class PagerankData implements SearchResult {
         return this.url;
     }
 
-    public Double getDataScore(){
-        return this.score;
-    }
-
 
     /*
 It calculates the score by multiplying the score of each url by its pagerank value and returns the updated score dict.
