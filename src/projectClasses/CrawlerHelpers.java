@@ -5,7 +5,7 @@ import java.nio.file.*;
 import java.util.*;
 
 public class CrawlerHelpers {
-    //a class that is used by the helper functions for minute tasks. These are not instance specific.
+    //a class that consists of helper static functions used by the crawler for various operations. These are not instance specific:: class methods.
 
     static boolean check_dir_exists(String dirname){
         Path path = Paths.get(dirname);

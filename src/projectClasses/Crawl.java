@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class Crawl{
-    // A class that crawls data from a webpage, parses the HTML data and stores them whilst calculation relevant data for future access by search engine.
+    // A class that crawls data from a webpage, parses the HTML data and stores them whilst calculating relevant data for future access by search engine.
     private List<String> linkQueue = new ArrayList<>();
     private ProjectTesterImp tester;
 
