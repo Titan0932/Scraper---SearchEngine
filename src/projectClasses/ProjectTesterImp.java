@@ -42,7 +42,6 @@ public class ProjectTesterImp implements ProjectTester {
      */
   public void crawl(String seedURL) {
     Crawl crawler= new Crawl(this);
-    this.initialize();
     crawler.crawl(seedURL);
   }
 

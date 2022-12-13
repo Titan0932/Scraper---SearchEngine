@@ -23,6 +23,7 @@ public class Crawl{
            */
     public void crawl(String seedURL) {
         List<String> uniqueWords = new ArrayList<>(); // list of all the unique words that are present in all of the urls crawled
+        tester.initialize();
         int linksAccessed = 0; // the counter for the number of links accessed
         this.linkQueue.add(seedURL);
         HashMap<String, HashMap<String, Integer>> pagesWordsCount = new HashMap<>();
