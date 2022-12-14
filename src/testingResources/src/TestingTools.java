@@ -49,7 +49,7 @@ public class TestingTools {
            realResults.add(new TestingToolsResult(r.getTitle(), r.getScore()));
        }
 
-       BufferedReader in = new BufferedReader(new FileReader(className + "-expected-search-results.txt"));
+       BufferedReader in = new BufferedReader(new FileReader("src/testingResources/"+className + "-expected-search-results.txt"));
        String line = in.readLine();
 
        while (line != null) {
