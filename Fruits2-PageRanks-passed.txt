@@ -1,0 +1,255 @@
+Passed Test #103 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-836.html
+expected = 3.440183926048478E-4
+result = 3.438836426888537E-4
+
+
+Passed Test #104 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-55.html
+expected = 6.196276934586521E-4
+result = 6.198663943916726E-4
+
+
+Passed Test #105 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-739.html
+expected = 4.5362833804366183E-4
+result = 4.528356865736024E-4
+
+
+Passed Test #106 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-516.html
+expected = 3.5774349553997466E-4
+result = 3.5819741948323096E-4
+
+
+Passed Test #107 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-820.html
+expected = 4.1283113365790273E-4
+result = 4.1324093813697316E-4
+
+
+Passed Test #108 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-965.html
+expected = 0.001150377069056384
+result = 0.0011518328197781809
+
+
+Passed Test #109 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-720.html
+expected = 9.50371867909481E-4
+result = 9.459185766814797E-4
+
+
+Passed Test #110 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-72.html
+expected = 0.002002796707909987
+result = 0.002011492098349901
+
+
+Passed Test #111 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-673.html
+expected = 3.5384852903240515E-4
+result = 3.5437903831126344E-4
+
+
+Passed Test #112 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-906.html
+expected = 3.7735734985848467E-4
+result = 3.767030084392198E-4
+
+
+Passed Test #113 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-859.html
+expected = 8.621328490798698E-4
+result = 8.626879225478655E-4
+
+
+Passed Test #114 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-980.html
+expected = 7.147182389867217E-4
+result = 7.127328374271184E-4
+
+
+Passed Test #115 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-640.html
+expected = 3.487925519172669E-4
+result = 3.4871600360071543E-4
+
+
+Passed Test #116 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-510.html
+expected = 0.0010657244687502297
+result = 0.0010649158146340558
+
+
+Passed Test #117 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-478.html
+expected = 9.077676695952732E-4
+result = 9.063448501130156E-4
+
+
+Passed Test #118 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-47.html
+expected = 0.002784802828799483
+result = 0.002784410195240543
+
+
+Passed Test #119 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-270.html
+expected = 0.001912679759615558
+result = 0.0019073656012196334
+
+
+Passed Test #120 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-383.html
+expected = 4.1133978861969503E-4
+result = 4.112860391731201E-4
+
+
+Passed Test #121 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-361.html
+expected = 5.903414831025885E-4
+result = 5.902885592462998E-4
+
+
+Passed Test #122 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-639.html
+expected = 6.218613057557382E-4
+result = 6.213778809168367E-4
+
+
+Passed Test #123 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-856.html
+expected = 6.346721281556817E-4
+result = 6.341700912883555E-4
+
+
+Passed Test #124 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-789.html
+expected = 6.635320926911974E-4
+result = 6.633863932986082E-4
+
+
+Passed Test #125 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-329.html
+expected = 0.002040972060430078
+result = 0.0020355471034964323
+
+
+Passed Test #126 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-765.html
+expected = 3.950598673105265E-4
+result = 3.961251970118409E-4
+
+
+Passed Test #127 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-362.html
+expected = 3.5181420974675755E-4
+result = 3.5205393050503957E-4
+
+
+Passed Test #128 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-650.html
+expected = 3.4752878811773676E-4
+result = 3.475828292402707E-4
+
+
+Passed Test #129 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-880.html
+expected = 6.205336983796334E-4
+result = 6.229401157050355E-4
+
+
+Passed Test #130 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-129.html
+expected = 0.002570748097825336
+result = 0.002566096200878878
+
+
+Passed Test #131 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-75.html
+expected = 0.0038561023868215953
+result = 0.003859380461010124
+
+
+Passed Test #132 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-61.html
+expected = 0.0021936841031614993
+result = 0.002193982114727568
+
+
+Passed Test #133 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-818.html
+expected = 3.743404224100811E-4
+result = 3.737576318539359E-4
+
+
+Passed Test #134 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-605.html
+expected = 8.505558653316477E-4
+result = 8.507749755707061E-4
+
+
+Passed Test #135 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-37.html
+expected = 0.0011451721426287156
+result = 0.001144727843056222
+
+
+Passed Test #136 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-662.html
+expected = 6.81127726475573E-4
+result = 6.785062267502984E-4
+
+
+Passed Test #137 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-550.html
+expected = 8.721560149181919E-4
+result = 8.717422145980402E-4
+
+
+Passed Test #138 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-290.html
+expected = 3.6753030785860815E-4
+result = 3.6722673006301987E-4
+
+
+Passed Test #139 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-426.html
+expected = 7.365056607011859E-4
+result = 7.369676287010203E-4
+
+
+Passed Test #140 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-832.html
+expected = 3.6749098953763515E-4
+result = 3.6765122667111036E-4
+
+
+Passed Test #141 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-372.html
+expected = 3.440963021120649E-4
+result = 3.4400597078105346E-4
+
+
+Passed Test #142 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-729.html
+expected = 3.8603107849933486E-4
+result = 3.8669078753226355E-4
+
+
+Passed Test #143 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-762.html
+expected = 6.082040711085188E-4
+result = 6.089149894392914E-4
+
+
+Passed Test #144 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-613.html
+expected = 3.766920475728569E-4
+result = 3.779508863707425E-4
+
+
+Passed Test #145 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-981.html
+expected = 9.33870432293359E-4
+result = 9.353825132283754E-4
+
+
+Passed Test #146 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-463.html
+expected = 0.0010885026897501364
+result = 0.0010825650653279969
+
+
+Passed Test #147 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-309.html
+expected = 3.403201547189664E-4
+result = 3.405091065420367E-4
+
+
+Passed Test #148 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-626.html
+expected = 3.550945608802363E-4
+result = 3.54811122695817E-4
+
+
+Passed Test #149 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-905.html
+expected = 4.0337884554803233E-4
+result = 4.022000777734457E-4
+
+
+Passed Test #150 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-173.html
+expected = 8.655169552281298E-4
+result = 8.646269144724799E-4
+
+
+Passed Test #151 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-44.html
+expected = 0.0017761685359935938
+result = 0.0017760519476053254
+
+
+Passed Test #152 checking page rank for https://people.scs.carleton.ca/~davidmckenney/fruits2/N-342.html
+expected = 3.691876655788804E-4
+result = 3.687878286198242E-4
+
+
+Passed Test #153 checking page rank for http://people.scs.carleton.ca/~davidmckenney/tinyfruits/N.html
+expected = -1.0
+result = -1.0
+
+

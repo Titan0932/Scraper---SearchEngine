@@ -2,15 +2,16 @@ package testingResources.src;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
+
+import projectClasses.ProjectTester;
+import projectClasses.ProjectTesterImp;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import projectClasses.*;
-
 
 public class FruitsTinyIncomingLinksTester {
     public static void main(String[] args) throws Exception {
-        ProjectTester tester = new ProjectTesterImp(); //Instantiate your own projectClasses.ProjectTester instance here
+        ProjectTester tester = new ProjectTesterImp(); //Instantiate your own ProjectTester instance here
         tester.initialize();
         tester.crawl("https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html");
         runTest(tester);

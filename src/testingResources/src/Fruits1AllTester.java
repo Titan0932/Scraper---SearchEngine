@@ -1,7 +1,7 @@
 package testingResources.src;
 
-import projectClasses.ProjectTesterImp;
 import projectClasses.ProjectTester;
+import projectClasses.ProjectTesterImp;
 
 public class Fruits1AllTester {
     public static void main(String[] args) throws Exception {

@@ -1,9 +1,11 @@
 package testingResources.src;
-import projectClasses.*;
+
+import projectClasses.ProjectTester;
+import projectClasses.ProjectTesterImp;
 
 public class FruitsTinyAllTester {
     public static void main(String[] args) throws Exception {
-        ProjectTester tester = new ProjectTesterImp(); //Instantiate your own projectClasses.ProjectTester instance here
+        ProjectTester tester = new ProjectTesterImp(); //Instantiate your own ProjectTester instance here
         tester.initialize();
         tester.crawl("https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html");
 
@@ -13,7 +15,7 @@ public class FruitsTinyAllTester {
         FruitsTinyIDFTester.runTest(tester);
         FruitsTinyTFTester.runTest(tester);
         FruitsTinyTFIDFTester.runTest(tester);
-        FruitsTinySearchTester.runTest(tester);
+//        FruitsTinySearchTester.runTest(tester);
         System.out.println("Finished running all tests.");
     }
 }

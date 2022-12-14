@@ -1,15 +1,12 @@
 package testingResources.src;
 
-
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.util.List;
 
-// import javax.naming.directory.SearchResult;
-
-import projectClasses.ProjectTesterImp;
 import projectClasses.ProjectTester;
+import projectClasses.ProjectTesterImp;
 import projectClasses.SearchResult;
+import java.util.List;
 
 public class FruitsTinySearchTester {
     public static void main(String[] args) throws Exception {

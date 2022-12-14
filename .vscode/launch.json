@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Fruits2SearchTester",
+            "request": "launch",
+            "mainClass": "testingResources.src.Fruits2SearchTester",
+            "projectName": "Crawler_fe363129"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

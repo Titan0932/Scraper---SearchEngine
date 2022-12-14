@@ -2,12 +2,12 @@ package testingResources.src;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
+
+import projectClasses.ProjectTester;
+import projectClasses.ProjectTesterImp;
 import java.util.List;
 
 import projectClasses.SearchResult;
-
-import projectClasses.ProjectTesterImp;
-import projectClasses.ProjectTester;
 
 public class Fruits1SearchTester {
     public static void main(String[] args) throws Exception {

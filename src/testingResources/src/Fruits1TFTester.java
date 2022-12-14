@@ -2,8 +2,9 @@ package testingResources.src;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import projectClasses.ProjectTesterImp;
+
 import projectClasses.ProjectTester;
+import projectClasses.ProjectTesterImp;
 
 public class Fruits1TFTester {
     public static void main(String[] args) throws Exception {

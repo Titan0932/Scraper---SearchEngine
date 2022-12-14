@@ -1,7 +1,6 @@
 package testingResources.src;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,6 +8,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import projectClasses.SearchResult;
 
 public class TestingTools {
     public static boolean checkListsEqual(List a, List b){
@@ -39,16 +40,16 @@ public class TestingTools {
         return Math.abs(a-b) < 0.001;
     }
 
-    //  TestingTools.checkSearch(yourResult, phrase, true, passOut, failOut)
-   public static void checkSearch(List<projectClasses.SearchResult> result, String phrase, boolean boost, PrintWriter passOut, PrintWriter failOut, String className, String curTestName) throws IOException {
+    //TestingTools.checkSearch(yourResult, phrase, true, passOut, failOut)
+   public static void checkSearch(List<SearchResult> result, String phrase, boolean boost, PrintWriter passOut, PrintWriter failOut, String className, String curTestName) throws IOException {
        List<TestingToolsResult> expectedResults = new ArrayList<TestingToolsResult>();
        List<TestingToolsResult> realResults = new ArrayList<TestingToolsResult>();
 
-       for (projectClasses.SearchResult r : result) {
+       for (SearchResult r : result) {
            realResults.add(new TestingToolsResult(r.getTitle(), r.getScore()));
        }
 
-       BufferedReader in = new BufferedReader(new FileReader("src/testingResources/"+className + "-expected-search-results.txt"));
+       BufferedReader in = new BufferedReader(new FileReader(className + "-expected-search-results.txt"));
        String line = in.readLine();
 
        while (line != null) {

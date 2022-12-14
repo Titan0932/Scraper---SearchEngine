@@ -2,11 +2,13 @@ package testingResources.src;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import projectClasses.*;
+
+import projectClasses.ProjectTester;
+import projectClasses.ProjectTesterImp;
 
 public class FruitsTinyIDFTester {
     public static void main(String[] args) throws Exception {
-        ProjectTester tester = new ProjectTesterImp(); //Instantiate your own projectClasses.ProjectTester instance here
+        ProjectTester tester = new ProjectTesterImp(); //Instantiate your own ProjectTester instance here
         tester.initialize();
         tester.crawl("https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html");
         runTest(tester);
