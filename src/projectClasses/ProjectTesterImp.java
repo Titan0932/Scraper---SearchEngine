@@ -247,9 +247,9 @@ public class ProjectTesterImp implements ProjectTester {
   }
 
   public static void main(String[] args) {
-    //   Crawler test= new ProjectTesterImp();
-    //  test.initialize();
-    //   test.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html");
+//       ProjectTester test= new ProjectTesterImp();
+//      test.initialize();
+//       test.crawl("https://people.scs.carleton.ca/~davidmckenney/fruits/N-0.html");
     //   List<SearchResult> res = (test.search("apple peach pear tomato pear", true, 10));
     //   for(SearchResult r:res){
     //     System.out.println(r.getTitle()+" "+ r.getScore());

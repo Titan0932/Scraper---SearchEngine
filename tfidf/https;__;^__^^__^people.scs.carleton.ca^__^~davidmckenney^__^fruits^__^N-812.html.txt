@@ -1,0 +1,10 @@
+banana
+0.0
+apple
+0.06039727190473691
+coconut
+0.0
+peach
+0.0
+pear
+0.0

@@ -1,0 +1,10 @@
+banana
+0.24
+apple
+0.22
+coconut
+0.16
+peach
+0.16
+pear
+0.22
